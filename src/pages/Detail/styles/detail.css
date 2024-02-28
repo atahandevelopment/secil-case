@@ -1,0 +1,15 @@
+.detail-container {
+    @apply md:w-11/12 xs:w-full md:h-[600px] xs:h-auto flex border xs:flex-col md:ms-[28px] xs:justify-start md:items-center flex-wrap rounded-md mt-5;
+}
+
+.detail-container .img-container {
+    @apply md:w-1/2 xs:w-full xs:flex xs:justify-center;
+}
+
+.img-container .image {
+    @apply w-full h-full object-contain;
+}
+
+.detail-field {
+   @apply w-full h-full p-4 flex flex-col justify-center gap-10;
+}

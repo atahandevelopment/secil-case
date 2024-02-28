@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders Detail component correctly 1`] = `
+<div
+  className="card-container"
+>
+  <div
+    className="image-container"
+  >
+    <img
+      src=""
+    />
+  </div>
+  <div
+    className="movie-name-container"
+  >
+    <label />
+    <label
+      className="price"
+    />
+  </div>
+</div>
+`;

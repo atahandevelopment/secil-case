@@ -1,0 +1,13 @@
+.footer-container {
+    @apply w-screen h-[70px] bg-indigo-950 text-white flex justify-center items-center;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-context {
+    @apply w-10/12 h-[24px] flex justify-between items-center;
+}
+
+.footer-context .social {
+    @apply w-auto h-full flex gap-[16px];
+}
