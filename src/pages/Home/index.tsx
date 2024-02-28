@@ -6,7 +6,7 @@ import DefaultLayout from "../../components/Layout";
 import { GetProducts } from "./service";
 import { ProductTypes } from "./types";
 import "./styles/home.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Home = () => {
   const [products, setProducts] = useState<ProductTypes[]>([]);
@@ -33,9 +33,9 @@ const Home = () => {
         <div className="products-list">
           {products && products.length > 0 ? (
             products.map((product, index) => (
-              <a key={index} href={`/product-detail/${product?.id}`}>
+              <Link key={index} to={`/product-detail/${product?.id}`}>
                 <Card data={product} />
-              </a>
+              </Link>
             ))
           ) : (
             <></>
